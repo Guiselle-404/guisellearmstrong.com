@@ -2,22 +2,19 @@ title: Guiselle Armstrong
 baseURL: https://guisellearmstrong.com/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-disableLanguages: []
 enableRobotsTXT: true
 enableGitInfo: false
 disableGenerator: true
 
 minify:
   minifyOutput: true
-  tdewolfe/minify/
-    keep_css_arguments: true
+  tdewolfe/minify:
+    keep-css-arguments: true
 
 build:
-  build:
-    noChmod: true
-    nojsd: true
-    write: true
-    
+  noChmod: true
+  noJSDInHead: true
+
 permalinks:
   blog: /blog/:slug/
   projects: /projects/:slug/
@@ -30,7 +27,6 @@ taxonomies:
   tag: tags
   category: categories
   publication_type: publication_types
-  project: projects
 
 params:
   environment: production
@@ -49,7 +45,6 @@ outputs:
   taxonomy:
     - HTML
     - RSS
-    - RSS
   term:
     - HTML
     - RSS
@@ -61,10 +56,4 @@ pagination:
 
 privacy:
   youtube:
-    privacy_enhanced: true
-
-taxonomies:
-  tag: tags
-  category: categories
-  author: authors
-  publication_type: publication_types
+    privacyEnhanced: true

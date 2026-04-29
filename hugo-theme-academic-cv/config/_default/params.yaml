@@ -1,1 +1,36 @@
-# Lines 1-289 will be the actual params.yaml content
+# HugoBlox Site Parameters
+# Documentation: https://docs.hugoblox.com/
+
+# ---- Identity ----
+first_name: Guiselle
+last_name: Armstrong
+name_shortcode: GA
+
+# Display name
+title: Guiselle Armstrong
+
+# ---- Theme ----
+theme:
+  day_night:
+    enable_dark: true
+  color:
+    scheme: teal
+  font:
+    size: l
+
+# ---- Site Type ----
+# Person, Organisations, etc.
+seo:
+  site_type: Person
+  locale: en-US
+
+# ---- Features ----
+features:
+  # Homepage sections in order
+  homepage:
+    - hero
+    - about_resume
+    - experience
+    - skills
+    - certifications
+    - contact
