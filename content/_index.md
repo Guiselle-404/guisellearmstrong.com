@@ -39,6 +39,13 @@ sections:
       user: me
       date_format: Jan 2006
       user_resource_limit: 3
+  - block: resume-experience
+    content:
+      title: Volunteer Experience
+      text: Community service and volunteer work demonstrating leadership, coordination, and commitment.
+      username: me
+      date_format: Jan 2006
+      key: volunteer
   - block: collection
     content:
       title: Projects
