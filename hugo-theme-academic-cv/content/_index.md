@@ -11,6 +11,9 @@ sections:
   - block: resume-biography-3
     content:
       username: me
+      button:
+        text: Download Resume
+        url: resume.pdf
       text: |
         Hi, I'm Guiselle, a Governance, Risk, and Compliance (GRC) professional with over a decade of experience helping organizations navigate complex risk, compliance, and technology change in practical, people-centered ways.
 
@@ -48,6 +51,10 @@ sections:
   - block: resume-skills
     content:
       title: Skills
+      user: me
+  - block: resume-awards
+    content:
+      title: Certifications
       user: me
   - block: markdown
     content:
