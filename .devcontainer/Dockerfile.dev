@@ -1,0 +1,18 @@
+FROM debian:bookworm-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl ca-certificates gnupg nodejs npm \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Hugo extended
+RUN curl -sL https://github.com/gohugoio/hugo/releases/download/v0.147.4/hugo_extended_0.147.4_linux-arm64.deb -o hugo.deb \
+    && apt-get update && apt-get install -y ./hugo.deb \
+    && rm hugo.deb
+
+# Install TailwindCSS CLI
+RUN npm install -g @tailwindcss/cli
+
+WORKDIR /app
