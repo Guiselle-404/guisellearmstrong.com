@@ -61,14 +61,32 @@ jobs:
         working-directory: hugo-theme-academic-cv
         run: pnpm install --frozen-lockfile
 
-      - name: Build with pnpm
+      - name: Hugo mod vendor
         working-directory: hugo-theme-academic-cv
-        run: pnpm build
+        run: go mod tidy && hugo mod vendor
+
+      - name: Build Hugo site
+        working-directory: hugo-theme-academic-cv
+        run: hugo --minify 2>&1 | tee /tmp/hugo-build.log
+
+      - name: Build search index
+        working-directory: hugo-theme-academic-cv
+        run: |
+          find public -name '*.html' -exec sed -i 's/<body class="/<body data-pagefind-body class="/g' {} +
+          find public -name '*.html' -exec sed -i 's/<body id="/<body data-pagefind-body id="/g' {} +
+          pnpm run pagefind || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: hugo-theme-academic-cv/public
+
+      - name: Upload build logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: /tmp/hugo-build.log
 
   # Deployment job
   deploy:
