@@ -1,0 +1,132 @@
+Guiselle Armstrong
+Auburndale, FL | (305) 915-5273 |g_a25@outlook.com | LinkedIn: linkedin.com/in/guisellearmstrong-12217760
+
+Professional Summary
+GRC and Process Improvement professional with 10+ years of experience implementing
+governance frameworks, managing enterprise risk programs, and ensuring regulatory compliance
+(SOX, SOC 2, PCI DSS, GDPR, CCPA) Guiselle_Armstrong_Resume.docx. Proven track record
+of reducing compliance violations by 50% through control design, audit preparation, and process
+automation. Lean Six Sigma Black Belt certified with expertise in vulnerability lifecycle
+management, control testing, audit evidence management, and compliance training development.
+
+Certifications
+•
+•
+
+Six Sigma Black Belt – Level II Guiselle_Armstrong_Resume.docx
+Six Sigma Green Belt – Level I Guiselle_Armstrong_Resume.docx
+
+Core Competencies
+GRC & Compliance
+Control Design & Testing
+
+Process Improvement
+Lean Six Sigma (DMAIC,
+SIPOC)
+Risk Assessment
+
+Audit Management & Readiness
+Regulatory Compliance (SOX, PCI DSS,
+Process Optimization
+GDPR, CCPA)
+User Access Governance & Training
+
+Workflow Standardization
+
+PCI DSS Training Development
+ITGC & Compliance Frameworks
+
+Stakeholder Engagement
+Data Analytics
+
+Technical Skills
+ServiceNow
+Automation
+Power BI Dashboards
+Power Automate
+Vulnerability
+Management
+WSUS/SCCM
+Network Security
+
+Professional Experience
+NBCUniversal – Senior GRC Engineer | Mar 2023 – Present
+Governance, Risk & Compliance Leadership:
+•
+•
+•
+•
+•
+•
+•
+
+Managed vulnerability lifecycle for 500+ enterprise systems, achieving 95% remediation
+rate within defined SLAs
+Developed and delivered PCI DSS compliance training for all onboarding employees,
+ensuring 100% new hire compliance coverage
+Conducted user access review training for 200+ employees, strengthening access
+governance and reducing unauthorized access risks
+Designed and tested security controls supporting SOX, SOC 2, PCI DSS, GDPR, and
+CCPA compliance frameworks
+Reduced manual compliance reporting effort by 50% through ServiceNow automation
+and Power BI dashboards
+Partnered with internal audit teams on control walkthroughs and evidence collection,
+maintaining 100% audit pass rate
+Documented 100+ control procedures and policies to support audit readiness and
+regulatory requirements
+
+Publix Super Markets – Change Manager | Jun 2021 – Mar 2023
+Risk & Compliance Change Management:
+•
+•
+•
+•
+•
+
+Led user access review training programs, improving access control compliance and
+reducing audit findings
+Led enterprise change initiatives with embedded GRC controls, reducing compliancerelated incidents by 30%
+Conducted risk assessments for 200+ change requests annually, ensuring alignment with
+ITGC and SOX requirements
+Improved change success rates from 85% to 98% through standardized workflows and
+stakeholder communication
+Partnered with audit teams to document change control procedures supporting regulatory
+compliance
+
+Digital Aspire / Newgentek – Technical Support Manager | Feb 2019 – Mar 2020
+Compliance & Process Improvement:
+•
+•
+•
+•
+
+Trained users on user access review processes, ensuring proper access governance and
+compliance with ITGC requirements
+Managed PCI DSS compliance for multi-site retail clients, ensuring 100% audit readiness
+Reduced service escalations by 25% through process optimization and control
+implementation
+Documented security procedures and control evidence supporting regulatory audits
+
+•
+
+Implemented monitoring controls for secure operations across distributed environments
+
+Badcock Home Furniture & More – Network Engineer | Feb 2015 – Feb 2019
+Network Security & Compliance:
+•
+•
+•
+•
+
+Managed vulnerability remediation and patch management for 200+ systems, achieving
+90% compliance rate
+Led network-related process improvements for change control, incident response, and
+access management
+Partnered with security teams to align network operations with ITGC and compliance
+requirements
+Documented 50+ network standards and procedures supporting audit readiness and
+operational consistency
+
+Education
+Bachelor of Business Administration – Southern New Hampshire University
+Associate of Information Technology – ITT Technical Institute

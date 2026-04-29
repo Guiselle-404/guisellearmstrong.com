@@ -1,0 +1,78 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Guiselle Armstrong
+  given: Guiselle
+  family: Armstrong
+role: GRC & Process Improvement Professional | Six Sigma Black Belt | Compliance & Risk Management Specialist
+address:
+  city: Auburndale
+  region: FL
+  country: United States
+bio: |
+  Governance, Risk, and Compliance (GRC) professional with over a decade of experience helping organizations navigate complex risk, compliance, and technology change.
+status:
+  label: "Open to Opportunities"
+social:
+  - icon: envelope
+    url: mailto:g_a25@outlook.com
+    label: Email
+  - icon: phone
+    url: tel:+13059155273
+    label: Phone
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/guisellearmstrong-12217760/
+    label: LinkedIn
+interests:
+  - Governance, Risk, and Compliance (GRC)
+  - Process Improvement & Six Sigma
+  - Enterprise Risk Management
+  - Regulatory Compliance
+education:
+  - degree: Bachelor of Business Administration (BBA)
+    institution: Southern New Hampshire University
+  - degree: Associate of Science (A.S.)
+    institution: ITT Technical Institute-Tampa
+experience:
+  - role: Senior GRC Engineer
+    org: NBCUniversal
+    start: 2023-03
+    summary: Managed vulnerability lifecycle for 500+ systems. Reduced manual compliance reporting by 50%.
+  - role: Change Manager
+    org: Publix Super Markets
+    start: 2021-06
+    end: 2023-03
+    summary: Improved change success rates from 85% to 98%.
+  - role: Technical Support Manager
+    org: Digital Aspire / Newgentek
+    start: 2019-02
+    end: 2020-03
+  - role: Network Engineer
+    org: Badcock Home Furniture & More
+    start: 2015-02
+    end: 2019-02
+skills:
+  - name: Core Competencies
+    items:
+      - label: GRC & Compliance
+      - label: Process Improvement
+      - label: Risk Assessment
+  - name: Technical Skills
+    items:
+      - label: ServiceNow
+      - label: Power BI
+      - label: Vulnerability Management
+certifications:
+  - name: Six Sigma Black Belt
+  - name: Six Sigma Green Belt
+  - name: ITIL 4
+  - name: Cybersecurity Foundations: GRC
+  - name: Navigate SOC 2 Compliance in the Cloud
+  - name: Six Sigma Black Belt (ICBB)
+  - name: Six Sigma White Belt
+key_achievements:
+  - Reduced compliance violations by 50%
+  - 95% vulnerability remediation rate
+  - Improved change success rates from 85% to 98%
+  - 100% audit pass rate maintained

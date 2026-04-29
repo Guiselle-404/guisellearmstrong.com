@@ -1,0 +1,82 @@
+{
+  "source_documents": [
+    "Guiselle Armstrong.pdf",
+    "Profile-2.pdf",
+    "resume-short.md",
+    "resume-long.md",
+    "profile-2.md",
+    "guiselle-dates.md"
+  ],
+  "certifications": [
+    {
+      "name": "Six Sigma Black Belt – Level II",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "Guiselle Armstrong.pdf"
+    },
+    {
+      "name": "Six Sigma Green Belt – Level I",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "Guiselle Armstrong.pdf"
+    },
+    {
+      "name": "ITIL 4",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "profile-2.md"
+    },
+    {
+      "name": "Cybersecurity Foundations: Governance, Risk, and Compliance (GRC)",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "profile-2.md"
+    },
+    {
+      "name": "Six Sigma White Belt Certification",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "profile-2.md"
+    },
+    {
+      "name": "Six Sigma Black Belt (ICBB)",
+      "issuer": "ICBB",
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "profile-2.md"
+    },
+    {
+      "name": "Navigate SOC 2 Compliance in the Cloud",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "profile-2.md"
+    },
+  ],
+  "total_certifications": 7,
+  "certification_categories": {
+    "Six Sigma": [
+      "Six Sigma Black Belt – Level II",
+      "Six Sigma Green Belt – Level I",
+      "Six Sigma White Belt Certification",
+      "Six Sigma Black Belt (ICBB)"
+    ],
+    "IT/Compliance": [
+      "ITIL 4",
+      "Cybersecurity Foundations: Governance, Risk, and Compliance (GRC)",
+      "Navigate SOC 2 Compliance in the Cloud"
+    ]
+  }
+}
