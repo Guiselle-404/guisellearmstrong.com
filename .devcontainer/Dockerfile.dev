@@ -4,13 +4,19 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl ca-certificates gnupg nodejs npm \
+    curl ca-certificates gnupg \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y --no-install-recommends nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Hugo extended
-RUN curl -sL https://github.com/gohugoio/hugo/releases/download/v0.147.4/hugo_extended_0.147.4_linux-arm64.deb -o hugo.deb \
-    && apt-get update && apt-get install -y ./hugo.deb \
-    && rm hugo.deb
+# Install Hugo extended 0.159.2 (architecture-agnostic)
+RUN ARCH=$(dpkg --print-architecture) && \
+    curl -sL "https://github.com/gohugoio/hugo/releases/download/v0.159.2/hugo_extended_0.159.2_linux-${ARCH}.deb" -o hugo.deb && \
+    apt-get update && apt-get install -y ./hugo.deb && \
+    rm hugo.deb
+
+# Install pnpm via corepack (bundled with Node.js 20.x from NodeSource)
+RUN corepack enable && corepack prepare pnpm@latest --activate
 
 # Install TailwindCSS CLI
 RUN npm install -g @tailwindcss/cli
