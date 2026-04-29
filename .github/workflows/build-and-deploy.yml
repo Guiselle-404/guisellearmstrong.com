@@ -29,6 +29,9 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hugo-theme-academic-cv
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,6 +44,7 @@ jobs:
         with:
           hugo-version: "0.147.6"
           extended: true
+          working-directory: hugo-theme-academic-cv
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -53,23 +57,16 @@ jobs:
           version: "10.14.0"
 
       - name: Install Node dependencies
-        run: |
-          cd hugo-theme-academic-cv
-          pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Install Hugo modules
-        run: |
-          cd hugo-theme-academic-cv
-          hugo mod get
+        run: hugo mod get
 
       - name: Build Hugo site
-        run: |
-          cd hugo-theme-academic-cv
-          hugo --minify
+        run: hugo --minify
 
       - name: Prepare search index
         run: |
-          cd hugo-theme-academic-cv
           find public -name '*.html' -exec sed -i 's/<body class="/<body data-pagefind-body class="/g' {} +
           find public -name '*.html' -exec sed -i 's/<body id="/<body data-pagefind-body id="/g' {} +
           pnpm run pagefind || true
