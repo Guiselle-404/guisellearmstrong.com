@@ -9,11 +9,11 @@ help:
 	@echo "  make clean  - Remove build artifacts"
 
 dev:
-	cd hugo-theme-academic-cv && hugo server
+	hugo server
 
 build:
-	cd hugo-theme-academic-cv && hugo --minify
+	hugo --minify --noChmod
 
 clean:
-	rm -rf hugo-theme-academic-cv/public
-	rm -rf hugo-theme-academic-cv/resources
+	rm -rf public
+	rm -rf resources

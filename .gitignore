@@ -1,8 +1,62 @@
-node_modules/
-.pnpm-store/
+# Hugo Build Artifacts
 public/
 resources/
 .hugo_build.lock
+hugo_stats.json
+
+# Node dependencies
+node_modules/
+.pnpm-store/
+
+# Package lock files (we use pnpm, not npm)
+package-lock.json
+yarn.lock
+
+# Installers and system files
+*.pkg
+*.dmg
+*.exe
+*.bin
+*.MSI
+
+# Archive and build artifacts
+*.zip
+*.tar.gz
+*.tar
 *.log
+*.tmp
+*.bak
+
+# Environment files
 .env
+.env.local
+.env.*.local
+
+# OS files
 .DS_Store
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Icons.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Hugo auto-generated JS config
+**/assets/jsconfig.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Cloud Foundry
+.gitignore

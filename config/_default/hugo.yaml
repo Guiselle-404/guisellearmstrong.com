@@ -1,0 +1,56 @@
+title: Guiselle Armstrong
+baseURL: https://guisellearmstrong.com/
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+enableGitInfo: false
+disableGenerator: true
+
+minify:
+  minifyOutput: true
+  tdewolfe/minify:
+    keep-css-arguments: true
+
+build:
+  noChmod: true
+  noJSDInHead: true
+  writeStats: true
+
+permalinks:
+  blog: /blog/:slug/
+  projects: /projects/:slug/
+
+taxonomies:
+  author: authors
+  tag: tags
+
+params:
+  environment: production
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+  term:
+    - HTML
+    - RSS
+
+paginate: 20
+pagination:
+  pagerSize: 20
+  path: page
+
+privacy:
+  youtube:
+    privacyEnhanced: true
+
+ignoreFiles:
+  - "^content/(courses|events|publications|slides)/"

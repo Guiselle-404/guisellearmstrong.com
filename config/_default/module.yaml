@@ -1,0 +1,29 @@
+############################
+## HUGO MODULES
+## Local theme - no external dependencies
+## All layouts and assets are vendored locally in _vendor/
+############################
+
+# Use vendored modules locally (no network access needed)
+wget:
+  disable: true
+
+imports:
+  - path: github.com/HugoBlox/kit/modules/blox
+  - path: github.com/HugoBlox/kit/modules/slides
+
+# Mount local files over vendored modules
+mounts:
+  # Local layouts override vendor layouts
+  - source: layouts
+    target: layouts
+  # Local assets override vendor assets
+  - source: assets
+    target: assets
+  # Standard Hugo mounts
+  - source: static
+    target: static
+  - source: content
+    target: content
+  - source: data
+    target: data

@@ -4,9 +4,6 @@
   "runArgs": [
     "-p", "1313:1313"
   ],
-  "mounts": [
-    "source=${localWorkspaceFolder}/hugo-theme-academic-cv,target=/app,type=bind"
-  ],
   "workingDirectory": "/app",
   "customizations": {
     "vscode": {
@@ -17,5 +14,5 @@
       ]
     }
   },
-  "postCreateCommand": "cd /app && npm install"
+  "postCreateCommand": "pnpm install"
 }
