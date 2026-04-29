@@ -1,11 +1,26 @@
 # CI/CD Rules - GuiselleArmstrong.com
 
-## Branch Strategy
-- `main` is the production branch (protected)
-- All changes must come through Pull Requests against `main`
+## Branch Strategy - CRITICAL RULES
+
+### 🚨 NEVER COMMIT OR PUSH DIRECTLY TO `main`
+- `main` is the protected production branch
+- **Direct pushes to `main` are rejected by repository rules**
+- **All changes MUST come through Pull Requests against `main`**
+- Before any work, create a feature branch first
+- If you accidentally commit to `main`, move the commits to a feature branch and reset main: `git branch fix/accidental && git reset --hard origin/main`
+
+### Branch Naming
 - Feature branches: `feature/description`
 - Bug fix branches: `fix/description`
-- Do NOT push directly to `main`
+- Always work on a feature branch, never on `main`
+
+### Workflow for Every Change
+1. Create a feature branch: `git checkout -b feature/description`
+2. Make your changes and commit on the feature branch
+3. Push the feature branch: `git push origin feature/description`
+4. Create a Pull Request against `main`
+5. Wait for PR build validation to pass
+6. Merge the PR (use squash merge to keep history clean)
 
 ## GitHub Actions Workflows
 
