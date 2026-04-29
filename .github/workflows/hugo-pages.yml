@@ -1,31 +1,24 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# Default to bash
 defaults:
   run:
     shell: bash
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -35,13 +28,13 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Hugo (extended, latest)
-        uses: peaceiris/actions-hugo@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.137.3'
           extended: true
 
-      - name: Setup Node.js (for Pagefind)
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -49,7 +42,7 @@ jobs:
       - name: Enable corepack and setup pnpm
         run: |
           corepack enable
-          corepack prepare pnpm@10.14.0 --activate
+          corepack prepare pnpm@latest --activate
 
       - name: Install Node dependencies
         working-directory: hugo-theme-academic-cv
@@ -62,14 +55,10 @@ jobs:
       - name: Build with Hugo
         working-directory: hugo-theme-academic-cv
         env:
-          # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Generate Pagefind search index
         working-directory: hugo-theme-academic-cv
@@ -80,7 +69,6 @@ jobs:
         with:
           path: ./hugo-theme-academic-cv/public
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
