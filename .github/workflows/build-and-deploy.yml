@@ -39,18 +39,18 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: "stable"
+          go-version: "1.21.5"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.159.2"
           extended: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -61,13 +61,9 @@ jobs:
         working-directory: hugo-theme-academic-cv
         run: pnpm install --frozen-lockfile
 
-      - name: Hugo mod vendor
-        working-directory: hugo-theme-academic-cv
-        run: go mod tidy && hugo mod vendor
-
       - name: Build Hugo site
         working-directory: hugo-theme-academic-cv
-        run: hugo --minify 2>&1 | tee /tmp/hugo-build.log
+        run: hugo --minify
 
       - name: Build search index
         working-directory: hugo-theme-academic-cv
@@ -80,13 +76,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: hugo-theme-academic-cv/public
-
-      - name: Upload build logs on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-logs
-          path: /tmp/hugo-build.log
 
   # Deployment job
   deploy:
