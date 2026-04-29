@@ -15,11 +15,11 @@ sections:
         text: Download Resume
         url: resume.pdf
       text: |
-        Hi, I'm Guiselle, a Governance, Risk, and Compliance (GRC) professional with over a decade of experience helping organizations navigate complex risk, compliance, and technology change in practical, people-centered ways.
+        Hi, I'm Guiselle Armstrong. I'm a Governance, Risk, and Compliance professional with over ten years of experience helping organizations manage risk, strengthen processes, and make compliance feel less intimidating and more practical. I'm a U.S. Air Force veteran, and early in my career I supported IRS data entry audits, where I developed a deep appreciation for accuracy, accountability, and doing things right the first time.
 
-        Throughout my career, I've worked at the intersection of security, compliance, and operations, partnering with engineering, security, and business teams to turn regulatory requirements into scalable, efficient processes. I specialize in building programs that don't just "check the box," but actually reduce risk, improve adoption, and support the business.
+        Today, I work at the intersection of people, process, and technology, supporting audits, improving vulnerability management, and helping teams build sustainable, well‑governed programs that actually work in real‑world environments. I enjoy collaborating across departments, breaking down complex requirements into clear, actionable steps, and creating solutions that support both compliance and operational goals. I'm driven by integrity, continuous improvement, and a genuine desire to make work easier and more meaningful for the people behind the processes.
 
-        I bring a collaborative, structured, and improvement-focused approach to everything I do. As a Lean Six Sigma Black Belt, I look for ways to simplify processes, eliminate inefficiencies, and create sustainable solutions that scale, even in large, highly regulated environments.
+        When I'm not working, you'll usually find me giving back to my community, learning something new, or finding better ways to connect people, systems, and ideas!
       email: g_a25@outlook.com
       gradient_text: true
       interests:
