@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Setup Node.js (for Tailwind/Pagefind)
+      - name: Setup Node.js (for Pagefind)
         uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -40,11 +40,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Pre-build Tailwind CSS
-        working-directory: hugo-theme-academic-cv
-        run: pnpm run css:build:once
-
-      - name: Build
+      - name: Build Hugo site
         working-directory: hugo-theme-academic-cv
         env:
           HUGO_ENVIRONMENT: production
@@ -54,7 +50,7 @@ jobs:
 
       - name: Generate Pagefind search index
         working-directory: hugo-theme-academic-cv
-        run: pnpm dlx pagefind --site 'public' --verbose
+        run: pnpm dlx pagefind --site public --force-language en
 
       - name: Upload build artifact (public)
         if: always() && hashFiles('hugo-theme-academic-cv/public/**') != ''

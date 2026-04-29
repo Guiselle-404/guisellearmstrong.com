@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]  # Change to your default branch if different
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Setup Node.js (for Tailwind/Pagefind)
+      - name: Setup Node.js (for Pagefind)
         uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -54,10 +54,6 @@ jobs:
       - name: Install Node dependencies
         working-directory: hugo-theme-academic-cv
         run: pnpm install --prefer-offline
-
-      - name: Pre-build Tailwind CSS
-        working-directory: hugo-theme-academic-cv
-        run: pnpm run css:build:once
 
       - name: Setup Pages
         id: pages
@@ -77,7 +73,7 @@ jobs:
 
       - name: Generate Pagefind search index
         working-directory: hugo-theme-academic-cv
-        run: pnpm dlx pagefind --site 'public' --verbose
+        run: pnpm dlx pagefind --site public --force-language en
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
