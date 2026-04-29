@@ -44,7 +44,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.147.6"
+          hugo-version: "latest"
           extended: true
 
       - name: Setup Node.js
@@ -61,20 +61,9 @@ jobs:
         working-directory: hugo-theme-academic-cv
         run: pnpm install --frozen-lockfile
 
-      - name: Install Hugo modules
+      - name: Build with pnpm
         working-directory: hugo-theme-academic-cv
-        run: hugo mod get
-
-      - name: Build Hugo site
-        working-directory: hugo-theme-academic-cv
-        run: hugo --minify
-
-      - name: Prepare search index
-        working-directory: hugo-theme-academic-cv
-        run: |
-          find public -name '*.html' -exec sed -i 's/<body class="/<body data-pagefind-body class="/g' {} +
-          find public -name '*.html' -exec sed -i 's/<body id="/<body data-pagefind-body id="/g' {} +
-          pnpm run pagefind || true
+        run: pnpm build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
