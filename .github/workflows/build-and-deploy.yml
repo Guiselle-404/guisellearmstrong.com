@@ -29,9 +29,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: hugo-theme-academic-cv
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,12 +36,16 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.147.6"
           extended: true
-          working-directory: hugo-theme-academic-cv
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -57,15 +58,19 @@ jobs:
           version: "10.14.0"
 
       - name: Install Node dependencies
+        working-directory: hugo-theme-academic-cv
         run: pnpm install --frozen-lockfile
 
       - name: Install Hugo modules
+        working-directory: hugo-theme-academic-cv
         run: hugo mod get
 
       - name: Build Hugo site
+        working-directory: hugo-theme-academic-cv
         run: hugo --minify
 
       - name: Prepare search index
+        working-directory: hugo-theme-academic-cv
         run: |
           find public -name '*.html' -exec sed -i 's/<body class="/<body data-pagefind-body class="/g' {} +
           find public -name '*.html' -exec sed -i 's/<body id="/<body data-pagefind-body id="/g' {} +
