@@ -1,0 +1,153 @@
+{
+  "database_name": "Guiselle Armstrong Professional Data Database",
+  "version": "1.0.0",
+  "created_date": "2026-04-17",
+  "description": "AI-readable database containing extracted professional data from Guiselle Armstrong's documents",
+  "source_documents": [
+    {
+      "filename": "Guiselle Armstrong.pdf",
+      "type": "PDF",
+      "raw_text_file": "raw/guiselle-armstrong-full-text.txt",
+      "description": "Primary resume document containing professional experience, certifications, and education"
+    },
+    {
+      "filename": "Profile-2.pdf",
+      "type": "PDF",
+      "raw_text_file": "raw/profile-2-full-text.txt",
+      "description": "LinkedIn-style profile document with detailed employment history"
+    },
+    {
+      "filename": "resume-short.md",
+      "type": "Markdown",
+      "status": "Empty file",
+      "description": "Short resume format (currently empty)"
+    },
+    {
+      "filename": "resume-long.md",
+      "type": "Markdown",
+      "status": "Empty file",
+      "description": "Long resume format (currently empty)"
+    },
+    {
+      "filename": "profile-2.md",
+      "type": "Markdown",
+      "status": "Populated",
+      "description": "Markdown version of Profile-2.pdf with contact info, summary, skills, certifications, experience, and education"
+    },
+    {
+      "filename": "guiselle-dates.md",
+      "type": "Markdown",
+      "status": "Populated",
+      "description": "Extracted date data from Guiselle Armstrong.pdf with structured JSON format"
+    }
+  ],
+  "structured_data_files": [
+    {
+      "filename": "employment.json",
+      "path": "structured/employment.json",
+      "description": "Complete employment history with positions, dates, locations, and responsibilities",
+      "records_count": 12,
+      "fields": [
+        "employer",
+        "position",
+        "start_date",
+        "end_date",
+        "duration",
+        "location",
+        "source",
+        "responsibilities"
+      ]
+    },
+    {
+      "filename": "education.json",
+      "path": "structured/education.json",
+      "description": "Educational background including degrees, institutions, and dates",
+      "records_count": 4,
+      "fields": [
+        "institution",
+        "degree",
+        "field_of_study",
+        "start_date",
+        "end_date",
+        "status",
+        "source"
+      ]
+    },
+    {
+      "filename": "skills.json",
+      "path": "structured/skills.json",
+      "description": "Core competencies, technical skills, frameworks, tools, methodologies, languages, and achievements",
+      "categories": [
+        "core_competencies",
+        "technical_skills",
+        "top_skills",
+        "frameworks_and_standards",
+        "tools_and_platforms",
+        "methodologies",
+        "languages",
+        "key_achievements"
+      ]
+    },
+    {
+      "filename": "certifications.json",
+      "path": "structured/certifications.json",
+      "description": "Professional certifications with issuer, dates, and categorization",
+      "records_count": 8,
+      "categories": {
+        "Six Sigma": 4,
+        "IT/Compliance": 4
+      }
+    },
+    {
+      "filename": "contact-info.json",
+      "path": "structured/contact-info.json",
+      "description": "Contact information including name, phone, email, LinkedIn, location, and professional summary",
+      "fields": [
+        "name",
+        "phone",
+        "email",
+        "linkedin",
+        "location",
+        "professional_title",
+        "professional_summary"
+      ]
+    }
+  ],
+  "data_statistics": {
+    "total_employment_positions": 12,
+    "total_education_records": 4,
+    "total_certifications": 8,
+    "core_competencies_count": 14,
+    "technical_skills_count": 7,
+    "frameworks_and_standards_count": 8,
+    "tools_and_platforms_count": 7,
+    "languages_count": 2,
+    "key_achievements_count": 8
+  },
+  "file_structure": {
+    "root": "ai-database/",
+    "directories": [
+      "raw/",
+      "structured/"
+    ],
+    "files": {
+      "raw": [
+        "guiselle-armstrong-full-text.txt",
+        "profile-2-full-text.txt"
+      ],
+      "structured": [
+        "employment.json",
+        "education.json",
+        "skills.json",
+        "certifications.json",
+        "contact-info.json"
+      ]
+    }
+  },
+  "usage_notes": [
+    "All raw text files preserve exact content from source documents",
+    "Structured JSON files organize data into logical categories for AI consumption",
+    "Each structured record includes source_document field for traceability",
+    "No data has been modified, summarized, or filtered - all original content preserved"
+  ]
+}

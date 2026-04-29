@@ -1,0 +1,83 @@
+{
+  "source_documents": [
+    "Guiselle Armstrong.pdf",
+    "Profile-2.pdf",
+    "resume-short.md",
+    "resume-long.md",
+    "profile-2.md",
+    "guiselle-dates.md"
+  ],
+  "core_competencies": [
+    "GRC & Compliance",
+    "Control Design & Testing",
+    "Process Improvement",
+    "Lean Six Sigma (DMAIC, SIPOC)",
+    "Risk Assessment",
+    "Audit Management & Readiness",
+    "Regulatory Compliance (SOX, PCI DSS, GDPR, CCPA)",
+    "Process Optimization",
+    "User Access Governance & Training",
+    "Workflow Standardization",
+    "PCI DSS Training Development",
+    "ITGC & Compliance Frameworks",
+    "Stakeholder Engagement",
+    "Data Analytics"
+  ],
+  "technical_skills": [
+    "ServiceNow",
+    "Automation",
+    "Power BI Dashboards",
+    "Power Automate",
+    "Vulnerability Management",
+    "WSUS/SCCM",
+    "Network Security"
+  ],
+  "top_skills": [
+    "IT GRC",
+    "Technology Change Management",
+  ],
+  "frameworks_and_standards": [
+    "SOX",
+    "SOC 2",
+    "PCI DSS",
+    "GDPR",
+    "CCPA",
+    "HIPAA",
+    "NIST",
+    "ITGC"
+  ],
+  "tools_and_platforms": [
+    "ServiceNow",
+    "Power BI",
+    "Power Automate",
+    "Nessus",
+    "Qualys",
+    "WSUS",
+    "SCCM"
+  ],
+  "methodologies": [
+    "Lean Six Sigma",
+    "DMAIC",
+    "SIPOC"
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "proficiency": "Native or Bilingual"
+    },
+    {
+      "language": "English",
+      "proficiency": "Fluent"
+    }
+  ],
+  "key_achievements": [
+    "Reduced compliance violations by 50% through control design, audit preparation, and process automation",
+    "Managed vulnerability lifecycle for 500+ enterprise systems, achieving 95% remediation rate within defined SLAs",
+    "Reduced manual compliance reporting effort by 50% through ServiceNow automation and Power BI dashboards",
+    "Maintained 100% audit pass rate",
+    "Reduced compliance-related incidents by 30%",
+    "Improved change success rates from 85% to 98%",
+    "Reduced service escalations by 25%",
+    "Achieved 90% compliance rate for vulnerability remediation and patch management"
+  ]
+}

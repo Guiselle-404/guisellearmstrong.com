@@ -1,0 +1,150 @@
+{
+  "source_documents": [
+    "Guiselle Armstrong.pdf",
+    "Profile-2.pdf",
+    "resume-short.md",
+    "resume-long.md",
+    "profile-2.md",
+    "guiselle-dates.md"
+  ],
+  "employment_history": [
+    {
+      "employer": "Universal Destinations & Experiences",
+      "position": "Senior Information Security Engineer",
+      "start_date": "June 2023",
+      "end_date": "October 2025",
+      "duration": "2 years 5 months",
+      "location": "United States",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "NBCUniversal",
+      "position": "Senior GRC Engineer",
+      "start_date": "Mar 2023",
+      "end_date": "Present",
+      "location": "United States",
+      "source": "Guiselle Armstrong.pdf",
+      "responsibilities": [
+        "Managed vulnerability lifecycle for 500+ enterprise systems, achieving 95% remediation rate within defined SLAs",
+        "Developed and delivered PCI DSS compliance training for all onboarding employees, ensuring 100% new hire compliance coverage",
+        "Conducted user access review training for 200+ employees, strengthening access governance and reducing unauthorized access risks",
+        "Designed and tested security controls supporting SOX, SOC 2, PCI DSS, GDPR, and CCPA compliance frameworks",
+        "Reduced manual compliance reporting effort by 50% through ServiceNow automation and Power BI dashboards",
+        "Partnered with internal audit teams on control walkthroughs and evidence collection, maintaining 100% audit pass rate",
+        "Documented 100+ control procedures and policies to support audit readiness and regulatory requirements"
+      ]
+    },
+    {
+      "employer": "NBCUniversal",
+      "position": "Senior Compliance and IT Governance Analyst",
+      "start_date": "March 2023",
+      "end_date": "June 2023",
+      "duration": "4 months",
+      "location": "United States",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "Publix Super Markets",
+      "position": "Change Manager",
+      "start_date": "Jun 2021",
+      "end_date": "Mar 2023",
+      "duration": "1 year 8 months",
+      "location": "United States",
+      "source": "Guiselle Armstrong.pdf",
+      "responsibilities": [
+        "Led user access review training programs, improving access control compliance and reducing audit findings",
+        "Led enterprise change initiatives with embedded GRC controls, reducing compliance-related incidents by 30%",
+        "Conducted risk assessments for 200+ change requests annually, ensuring alignment with ITGC and SOX requirements",
+        "Improved change success rates from 85% to 98% through standardized workflows and stakeholder communication",
+        "Partnered with audit teams to document change control procedures supporting regulatory compliance"
+      ]
+    },
+    {
+      "employer": "Publix Super Markets",
+      "position": "Change Management Analyst",
+      "start_date": "August 2021",
+      "end_date": "March 2023",
+      "duration": "1 year 8 months",
+      "location": "United States",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "Digital Aspire / Newgentek",
+      "position": "Technical Support Manager",
+      "start_date": "Feb 2019",
+      "end_date": "Mar 2020",
+      "duration": "1 year 2 months",
+      "location": "United States",
+      "source": "Guiselle Armstrong.pdf",
+      "responsibilities": [
+        "Trained users on user access review processes, ensuring proper access governance and compliance with ITGC requirements",
+        "Managed PCI DSS compliance for multi-site retail clients, ensuring 100% audit readiness",
+        "Reduced service escalations by 25% through process optimization and control implementation",
+        "Documented security procedures and control evidence supporting regulatory audits",
+        "Implemented monitoring controls for secure operations across distributed environments"
+      ]
+    },
+    {
+      "employer": "Bristol Myers Squibb",
+      "position": "Help Desk Analyst",
+      "start_date": "June 2020",
+      "end_date": "August 2021",
+      "duration": "1 year 3 months",
+      "location": "Tampa, Florida, United States",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "Badcock Home Furniture & More",
+      "position": "Network Engineer",
+      "start_date": "Feb 2015",
+      "end_date": "Feb 2019",
+      "duration": "4 years",
+      "location": "United States",
+      "source": "Guiselle Armstrong.pdf",
+      "responsibilities": [
+        "Managed vulnerability remediation and patch management for 200+ systems, achieving 90% compliance rate",
+        "Led network-related process improvements for change control, incident response, and access management",
+        "Partnered with security teams to align network operations with ITGC and compliance requirements",
+        "Documented 50+ network standards and procedures supporting audit readiness and operational consistency"
+      ]
+    },
+    {
+      "employer": "Badcock and More",
+      "position": "Network Engineer",
+      "start_date": "February 2016",
+      "end_date": "June 2020",
+      "duration": "4 years 5 months",
+      "location": "Mulberry, Florida",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "Verizon",
+      "position": "Help Desk Technician",
+      "start_date": "June 2013",
+      "end_date": "December 2015",
+      "duration": "2 years 7 months",
+      "location": "Tampa, Florida",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "AOL Seed",
+      "position": "Tech Support",
+      "start_date": "January 2013",
+      "end_date": "April 2013",
+      "duration": "4 months",
+      "location": "United States",
+      "source": "Profile-2.pdf"
+    },
+    {
+      "employer": "Kelly Services",
+      "position": "Technical Support",
+      "start_date": "2011",
+      "end_date": "2012",
+      "duration": "1 year",
+      "location": "United States",
+      "source": "Profile-2.pdf"
+    }
+  ],
+  "total_positions": 12,
+  "total_experience_years": "10+"
+}

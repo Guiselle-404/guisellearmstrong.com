@@ -1,0 +1,53 @@
+{
+  "source_documents": [
+    "Guiselle Armstrong.pdf",
+    "Profile-2.pdf",
+    "resume-short.md",
+    "resume-long.md",
+    "profile-2.md",
+    "guiselle-dates.md"
+  ],
+  "education": [
+    {
+      "institution": "Southern New Hampshire University",
+      "degree": "Bachelor of Business Administration (BBA)",
+      "field_of_study": "Business Administration and Management, General",
+      "start_date": "September 2025",
+      "end_date": "October 2026",
+      "status": "Expected",
+      "source": "profile-2.md"
+    },
+    {
+      "institution": "Southern New Hampshire University",
+      "degree": "Bachelor of Business Administration",
+      "field_of_study": null,
+      "start_date": null,
+      "end_date": null,
+      "status": "Completed",
+      "source": "Guiselle Armstrong.pdf"
+    },
+    {
+      "institution": "ITT Technical Institute-Tampa",
+      "degree": "Associate of Science (A.S.)",
+      "field_of_study": "Computer Systems Networking and Telecommunications",
+      "start_date": "2010",
+      "end_date": "2012",
+      "status": "Completed",
+      "source": "profile-2.md"
+    },
+    {
+      "institution": "ITT Technical Institute",
+      "degree": "Associate of Information Technology",
+      "field_of_study": null,
+      "start_date": null,
+      "end_date": null,
+      "status": "Completed",
+      "source": "Guiselle Armstrong.pdf"
+    }
+  ],
+  "total_institutions": 2,
+  "degrees_obtained": [
+    "Bachelor of Business Administration (BBA)",
+    "Associate of Science (A.S.) in Computer Systems Networking and Telecommunications"
+  ]
+}
