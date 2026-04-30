@@ -64,6 +64,20 @@ hugo --minify --noChmod
 pnpm install
 ```
 
+## Knowledge Base Maintenance
+
+### Local Knowledge Base (`docs/`)
+- **`docs/theme-kb.md`** - HugoBlox theme documentation (blocks, config, architecture)
+- **`docs/site-kb.md`** - Our site-specific documentation (structure, blocks used, recent changes)
+
+### KB Maintenance Rules
+- After any structural changes (new blocks, layout overrides, config changes), update `docs/theme-kb.md`
+- After any content changes (new projects, blog posts, section changes), update `docs/site-kb.md`
+- Update the "Last Updated" date in both files when making changes
+- Add entries to the "Recent Changes" table in `docs/site-kb.md` after each PR merge
+- The KB is the single source of truth for site architecture and should always reflect the current state
+- When adding new content types or blocks, document them in both KBs
+
 ## Content Update Rules
 
 ### When Updating Author Profile (me.yaml)
