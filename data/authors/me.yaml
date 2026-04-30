@@ -56,13 +56,35 @@ skills:
   - name: Core Competencies
     items:
       - label: GRC & Compliance
+      - label: Control Design & Testing
       - label: Process Improvement
       - label: Risk Assessment
-  - name: Technical Skills
+      - label: Audit Management & Readiness
+      - label: Regulatory Compliance
+      - label: Stakeholder Engagement
+      - label: Data Analytics
+  - name: Technical Skills & Tools
     items:
       - label: ServiceNow
-      - label: Power BI
+      - label: Power BI Dashboards
+      - label: Power Automate
       - label: Vulnerability Management
+      - label: Nessus / Qualys
+      - label: Network Security
+  - name: Frameworks & Standards
+    items:
+      - label: SOX
+      - label: SOC 2
+      - label: PCI DSS
+      - label: GDPR / CCPA
+      - label: HIPAA
+      - label: NIST
+      - label: ITGC
+  - name: Methodologies
+    items:
+      - label: Lean Six Sigma (DMAIC)
+      - label: SIPOC
+      - label: Workflow Standardization
 awards:
   - title: Six Sigma Black Belt
     icon: trophy
