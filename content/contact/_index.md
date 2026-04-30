@@ -1,6 +1,6 @@
 ---
 title: Contact
-type: list
+type: lead
 ---
 
 ## Get in Touch
