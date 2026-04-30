@@ -16,17 +16,15 @@
   }
   #section-resume-awards h5 {
     font-size: 1rem !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     margin: 0 !important;
     padding: 0.25rem 0 !important;
     display: list-item !important;
     list-style-type: disc !important;
-    color: #d1d5db !important;
+    color: #1f2937 !important;
   }
-  @media (prefers-color-scheme: light) {
-    #section-resume-awards h5 {
-      color: #374151 !important;
-    }
+  .dark #section-resume-awards h5 {
+    color: #d1d5db !important;
   }
   /* Hide trophy icons */
   #section-resume-awards h5 .inline-flex.items-center.justify-center {
@@ -42,5 +40,16 @@
   /* Add bullet indentation */
   #section-resume-awards h5::marker {
     color: #6b7280 !important;
+  }
+  /* Match Skills text to site body font — remove uppercase and letter-spacing */
+  #section-resume-skills .skills-name {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #374151 !important;
+  }
+  .dark #section-resume-skills .skills-name {
+    color: #d1d5db !important;
   }
 </style>
