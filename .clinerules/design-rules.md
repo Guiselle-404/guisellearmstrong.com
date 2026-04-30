@@ -23,3 +23,6 @@
 - Include resume download button prominently
 - Ensure mobile-friendly layout
 - High contrast for readability
+
+## Verification Rule
+- **Always verify visual changes using browser tools before pushing.** Launch the local Hugo server, use browser_action to scroll through each affected section, and confirm the layout matches the intended design on both desktop and mobile before creating a PR.
