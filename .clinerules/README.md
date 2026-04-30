@@ -1,24 +1,19 @@
-# Cline Development Rules
+# Cline Development Guidelines
 
-This directory contains instruction files that guide Cline (the AI assistant) when working on the GuiselleArmstrong.com portfolio project.
+This directory contains reference files that guide Cline (the AI assistant) when working on the GuiselleArmstrong.com portfolio project.
 
 ## Files
 
-- `project-context.md` - Overall project goals, structure, and context
-- `content-rules.md` - Rules for creating and updating site content
-- `hugo-rules.md` - Hugo-specific development rules and conventions
-- `design-rules.md` - Design and branding guidelines
-- `ci-cd.md` - CI/CD workflows, branch strategy, and deployment rules
+- `project-context.md` - Project overview, data sources, and goals
+- `content-rules.md` - Content tone, style, and sourcing suggestions
+- `hugo-rules.md` - Hugo theme structure, commands, and file locations
+- `design-rules.md` - Design preferences, color palette, and layout guidance
+- `ci-cd.md` - Publishing workflow and branch naming conventions
 
-## How It Works
+## Purpose
 
-Cline reads these files to understand:
-- The project's purpose and structure
-- Content sourcing and真实性 requirements
-- Hugo theme conventions and file locations
-- Design preferences and branding rules
-- CI/CD workflow and branch protection rules
+These files provide context and conventions to help maintain consistency across sessions. They are guidelines, not hard constraints — the user's creative direction always takes precedence.
 
-## Adding New Rules
+## Adding New Guidelines
 
-Create a new `.md` file in this directory with clear, actionable instructions. Use checklists and examples where helpful.
+Create a new `.md` file in this directory with clear, actionable suggestions. Use checklists and examples where helpful.
