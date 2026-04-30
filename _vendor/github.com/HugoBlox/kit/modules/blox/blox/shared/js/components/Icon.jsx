@@ -17,6 +17,8 @@ export const Icon = ({svg, attributes}) => {
   if (!svg) return null;
 
   // Clean the SVG string: decode HTML entities and TRIM whitespace
+  // IMPORTANT: Decode &amp; LAST to avoid double-unescaping
+  // See: https://codeql.github.com/codeql-query-help/js/js-double-escaping/
   let decoded = String(svg)
     .replace(/\\u003c/gi, "<")
     .replace(/\\u003e/gi, ">")
@@ -24,8 +26,8 @@ export const Icon = ({svg, attributes}) => {
     .replace(/&gt;/gi, ">")
     .replace(/&quot;/gi, '"')
     .replace(/&#34;/gi, '"')
-    .replace(/\\u0026/gi, "&")
     .replace(/&amp;/gi, "&")
+    .replace(/\\u0026/gi, "&")
     .trim();
 
   const hasWrapper = /<svg[\s>]/i.test(decoded);

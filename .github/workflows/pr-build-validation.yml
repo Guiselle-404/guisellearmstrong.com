@@ -5,6 +5,10 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
 
+# Limit permissions to read-only for PR validation
+permissions:
+  contents: read
+
 # Cancel in-progress runs for the same PR
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}

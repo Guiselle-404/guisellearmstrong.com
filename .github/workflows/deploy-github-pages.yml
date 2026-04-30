@@ -5,6 +5,10 @@ on:
     branches: [main]
   workflow_dispatch:  # Allow manual triggers
 
+# Limit default permissions to read-only
+permissions:
+  contents: read
+
 # Allow only one concurrent deployment
 concurrency:
   group: pages
