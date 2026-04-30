@@ -44,6 +44,12 @@
 - **Certifications:** `profile-data/structured/certifications.json`
 - **Resume PDF:** `resumes/Guiselle Armstrong.pdf`
 
+## Local Knowledge Base (`docs/`)
+- **`docs/theme-kb.md`** - HugoBlox theme documentation (blocks, config, architecture)
+- **`docs/site-kb.md`** - Site-specific documentation (structure, current state, recent changes)
+- **These KBs are maintained after every structural or content change**
+- Theme original repo: https://github.com/HugoBlox/hugo-theme-academic-cv
+
 ## Person Being Representated
 - **Name:** Guiselle Armstrong
 - **Location:** Auburndale, FL

@@ -1,99 +1,51 @@
-# CI/CD Rules - GuiselleArmstrong.com
+# CI/CD & Publishing Workflow - GuiselleArmstrong.com
 
-## Branch Strategy - CRITICAL RULES
+## 🚨 CRITICAL RULES
 
-### 🚨 NEVER COMMIT OR PUSH DIRECTLY TO `main`
-- `main` is the protected production branch
-- **Direct pushes to `main` are rejected by repository rules**
-- **All changes MUST come through Pull Requests against `main`**
-- Before any work, create a feature branch first
-- If you accidentally commit to `main`, move the commits to a feature branch and reset main: `git branch fix/accidental && git reset --hard origin/main`
+1. **NEVER push directly to `main`** — All changes MUST go through a Pull Request
+2. **NEVER publish without explicit user request** — Make changes locally, wait for "publish"
+3. **ALWAYS validate locally before publishing** — Build must pass with `hugo --minify --noChmod`
 
-### Branch Naming
+## Default Workflow: Local Changes Only
+
+For all content updates, edits, and changes:
+- Modify files locally
+- Test with `hugo --minify --noChmod` to verify the build
+- **Do NOT create a PR or push** — The user works iteratively, making multiple changes before publishing
+- Inform the user the changes are ready and tested
+
+## When User Says "Publish"
+
+Only when the user explicitly says:
+- "publish it", "push it to public", "deploy the changes", "make it live", "push the site", "publish the site", "merge all changes"
+
+### Publishing Steps
+
+1. **Build & verify locally:** `hugo --minify --noChmod` — must succeed with zero errors
+2. **Validate visually:** Start `hugo server`, use browser_action to scroll through the homepage and verify all sections render correctly
+3. **Create feature branch:** `git checkout -b feature/publish-changes`
+4. **Commit all changes:** `git add -A && git commit -m "<descriptive message>"`
+5. **Push branch:** `git push origin feature/publish-changes`
+6. **Create PR** against `main` via GitHub MCP
+7. **Wait for build checks** (poll every 25s, max 3 min):
+   - Use `pull_request_read` with `get_check_runs` method
+   - "Build Hugo Site" must have `conclusion: "success"`
+8. **If build passes:** Merge PR (squash merge)
+9. **If build fails:**
+   - **Simple fix** (typo, YAML syntax): Fix locally, push to same branch, wait for build again
+   - **Complex/unclear issue:** STOP and alert the user with:
+     - What the error is and where it occurred
+     - 2-3 suggested fixes
+     - Ask how to proceed
+10. **After merge:** Inform user changes are on `main`. Deployment to the live site requires manual trigger via GitHub Actions.
+
+## Deployment to Live Site
+
+After merging to `main`, the user must manually trigger deployment:
+1. Go to https://github.com/Guiselle-404/guisellearmstrong.com/actions/workflows/deploy-github-pages.yml
+2. Click "Run workflow" → select "main" → click "Run workflow"
+
+## Branch Naming
+
 - Feature branches: `feature/description`
 - Bug fix branches: `fix/description`
-- Always work on a feature branch, never on `main`
-
-### Workflow for Every Change
-1. Create a feature branch: `git checkout -b feature/description`
-2. Make your changes and commit on the feature branch
-3. Push the feature branch: `git push origin feature/description`
-4. Create a Pull Request against `main`
-5. Wait for PR build validation to pass
-6. Merge the PR (use squash merge to keep history clean)
-
-## GitHub Actions Workflows
-
-### PR Build Validation (`.github/workflows/pr-build-validation.yml`)
-- **Trigger:** Pull requests opened/updated against `main`
-- **Purpose:** Validate that the Hugo site builds successfully
-- **Behavior:** Cancels previous runs for same PR on new pushes
-- **On failure:** Uploads build output artifact for debugging
-- **Required:** Must pass before PR can be merged
-
-### GitHub Pages Deployment (`.github/workflows/deploy-github-pages.yml`)
-- **Trigger:** Pushes to `main` branch or manual `workflow_dispatch`
-- **Purpose:** Build and deploy site to GitHub Pages
-- **Behavior:** Only one deployment runs at a time (concurrency group)
-- **Environment:** Uses GitHub Pages environment with OIDC authentication
-
-## Building the Site Locally
-
-### Prerequisites
-- Hugo Extended version **0.159.2**
-- Node.js with pnpm
-
-### Commands
-```bash
-# Install dependencies
-pnpm install
-
-# Start development server
-hugo server
-
-# Build for production
-hugo --minify --noChmod
-```
-
-### Site Structure
-- Hugo site is at **repository root** (no subfolder)
-- Output goes to `public/` directory
-- Theme is fully local in `_vendor/` (no external module dependencies)
-
-## Theme Maintenance
-- Theme lives in `layouts/` (overrides) and `_vendor/` (source) at repository root
-- No external module dependencies - all templates are vendored locally
-- When modifying layouts:
-  1. Edit files in `layouts/` directory
-  2. Test with `hugo server`
-  3. Verify visually in browser
-  4. Commit changes
-
-## Working with the Repository
-
-### Making Changes
-1. Create a feature branch: `git checkout -b feature/description`
-2. Make your changes
-3. Test locally with `hugo server` if possible
-4. Commit with descriptive messages
-5. Push and create a Pull Request against `main`
-6. Wait for PR build validation workflow to pass
-7. Request review if required
-
-### Content Updates
-- Always source professional data from `profile-data/structured/` JSON files
-- Update `data/authors/me.yaml` for profile changes
-- Update `content/_index.md` for homepage section changes
-- Update `content/experience.md` for experience page changes
-
-### Emergency Deploy
-If you need to trigger a manual deployment:
-1. Go to GitHub Actions tab
-2. Select "Deploy to GitHub Pages" workflow
-3. Click "Run workflow" button
-
-## Branch Protection Rules (to be configured)
-- Require pull request reviews before merging
-- Require status checks to pass (pr-build-validation)
-- Require branches to be up to date before merging
-- Restrict force pushes to `main`
