@@ -23,10 +23,10 @@ Only when the user explicitly says:
 
 1. **Build & verify locally:** `hugo --minify --noChmod` — must succeed with zero errors
 2. **Validate visually:** Start `hugo server`, use browser_action to scroll through the homepage and verify all sections render correctly
-3. **Create feature branch:** `git checkout -b feature/publish-changes`
-4. **Commit all changes:** `git add -A && git commit -m "<descriptive message>"`
-5. **Push branch:** `git push origin feature/publish-changes`
-6. **Create PR** against `main` via GitHub MCP
+3. **Create descriptive feature branch:** Create a branch name that describes the changes being published (e.g., `feature/add-contact-page`, `feature/update-certifications`, `feature/redesign-homepage`). Summarize the key changes in the branch name using kebab-case.
+4. **Commit all changes:** `git add -A && git commit -m "<descriptive message summarizing all changes>"`
+5. **Push branch:** `git push origin <descriptive-branch-name>`
+6. **Create PR** against `main` via GitHub MCP with a descriptive title and body listing all changes
 7. **Wait for build checks** (poll every 25s, max 3 min):
    - Use `pull_request_read` with `get_check_runs` method
    - "Build Hugo Site" must have `conclusion: "success"`
@@ -37,15 +37,11 @@ Only when the user explicitly says:
      - What the error is and where it occurred
      - 2-3 suggested fixes
      - Ask how to proceed
-10. **After merge:** Inform user changes are on `main`. Deployment to the live site requires manual trigger via GitHub Actions.
-
-## Deployment to Live Site
-
-After merging to `main`, the user must manually trigger deployment:
-1. Go to https://github.com/Guiselle-404/guisellearmstrong.com/actions/workflows/deploy-github-pages.yml
-2. Click "Run workflow" → select "main" → click "Run workflow"
+10. **After merge:** Inform user changes are being published and should appear soon publicly. Otherwise check the GitHub Actions for failures on the Deploy to GitHub Pages workflow.
 
 ## Branch Naming
 
-- Feature branches: `feature/description`
-- Bug fix branches: `fix/description`
+- Feature branches: `feature/<description-of-changes>` — e.g., `feature/add-contact-page`, `feature/update-certifications-list`, `feature/simplify-homepage`
+- Bug fix branches: `fix/<description-of-fix>` — e.g., `fix/typo-in-bio`, `fix/broken-link`
+- Publish branches: Always describe what's being published, never use generic names like `publish-changes` or `update`
+- Commit messages: Summarize all changes being published in the commit message and PR description

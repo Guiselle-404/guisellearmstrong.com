@@ -8,9 +8,6 @@
 
 ## Hugo Site Structure
 
-### Site Root
-The Hugo site lives at the **repository root** (`/Users/gisi/code/guisellearmstrong.com`). All Hugo commands must be run from the repository root.
-
 ### Configuration Files
 - `config/_default/hugo.yaml` - Site title, baseURL, build settings, permalinks
 - `config/_default/params.yaml` - HugoBlox theme params (identity, theme, layout, SEO)
@@ -73,32 +70,15 @@ pnpm install
 ### KB Maintenance Rules
 - After any structural changes (new blocks, layout overrides, config changes), update `docs/theme-kb.md`
 - After any content changes (new projects, blog posts, section changes), update `docs/site-kb.md`
-- Update the "Last Updated" date in both files when making changes
-- Add entries to the "Recent Changes" table in `docs/site-kb.md` after each PR merge
 - The KB is the single source of truth for site architecture and should always reflect the current state
 - When adding new content types or blocks, document them in both KBs
-
-## Content Update Rules
-
-### When Updating Author Profile (me.yaml)
-- Always source data from `profile-data/structured/` JSON files
-- Keep education section aligned with `education.json`
-- Keep experience section aligned with `employment.json`
-- Keep skills section aligned with `skills.json`
-- Keep certifications aligned with `certifications.json`
 
 ### When Updating Homepage (_index.md)
 - The `resume-biography-3` block pulls from `data/authors/me.yaml`
 - Button links to `/resume.pdf` (exists in `static/resume.pdf`)
 - Keep homepage concise; don't add verbose text
 
-### When Adding Experience Entries
-- Use `content/experience.md` for the overview page
-- Format: mutex title, organization, dates, location, bullet-point achievements
-
 ### Menu Navigation (menus.yaml)
-- Main menu items: Home, Experience, Projects, Contact
-- Keep it simple and recruiter-friendly
 - Weights control ordering (lower = first)
 
 ### Adding New Blocks
