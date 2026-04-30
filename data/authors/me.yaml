@@ -63,15 +63,24 @@ skills:
       - label: ServiceNow
       - label: Power BI
       - label: Vulnerability Management
-certifications:
-  - name: Six Sigma Black Belt
-  - name: Six Sigma Green Belt
-  - name: Six Sigma Yellow Belt
-  - name: "Certified in Cybersecurity (CC) – ISC²"
-  - name: "ITIL® Certified"
-  - name: "Cybersecurity Foundations: GRC"
-  - name: Navigate SOC 2 Compliance in the Cloud
-  - name: Six Sigma White Belt
+awards:
+  - title: Six Sigma Black Belt
+    icon: trophy
+  - title: Six Sigma Green Belt
+    icon: trophy
+  - title: Six Sigma Yellow Belt
+    icon: trophy
+  - title: "Certified in Cybersecurity (CC) – ISC²"
+    icon: trophy
+    awarder: "ISC²"
+  - title: "ITIL® Certified"
+    icon: trophy
+  - title: "Cybersecurity Foundations: Governance, Risk, and Compliance (GRC)"
+    icon: trophy
+  - title: Navigate SOC 2 Compliance in the Cloud
+    icon: trophy
+  - title: Six Sigma White Belt
+    icon: trophy
 volunteer:
   - role: Volunteer – Meal Prep, Kitchen Coordination & Delivery Support
     org: Meals on Wheels (Polk County)
