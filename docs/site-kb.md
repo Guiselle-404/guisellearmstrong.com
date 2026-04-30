@@ -48,7 +48,8 @@ content/
 
 ## Custom Layouts
 
-- `layouts/_partials/hooks/head-end/github-button.html` - GitHub button, hides HugoBlox footer
+- `layouts/_partials/hooks/head-end/github-button.html` - GitHub button script, hides HugoBlox footer, injects "Connect on LinkedIn" button in hero section
+- `layouts/_partials/page_author_card.html` - Overrides theme's author bio card to add "Connect on LinkedIn" link below social icons
 
 ## Content Rules
 
@@ -60,6 +61,7 @@ content/
 
 | Date | PR | Change |
 |------|-----|--------|
+| 2026-04-30 | #32 | Added LinkedIn Connect buttons to hero section and author bio |
 | 2026-04-29 | #14 | Updated Change Management project |
 | 2026-04-29 | #13 | Updated Vulnerability Management project |
 | 2026-04-29 | #12 | Removed project card dates |

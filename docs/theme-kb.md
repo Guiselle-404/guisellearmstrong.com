@@ -227,7 +227,8 @@ hugo --minify --noChmod
 ## Local Customizations
 
 ### Layout Overrides (`layouts/`)
-- `_partials/hooks/head-end/github-button.html` - GitHub button script, hides HugoBlox footer
+- `_partials/hooks/head-end/github-button.html` - GitHub button script, hides HugoBlox footer, injects "Connect on LinkedIn" button in hero section via JavaScript
+- `_partials/page_author_card.html` - Overrides theme's `_vendor/.../blox/layouts/_partials/page_author_card.html` to add "Connect on LinkedIn" link below social icons in author bio card (appears at bottom of project/blog pages)
 
 ### Static Assets
 - `static/resume.pdf` - Resume download
