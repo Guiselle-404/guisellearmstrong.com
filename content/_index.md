@@ -53,6 +53,8 @@ sections:
     content:
       title: Skills
       user: me
+    design:
+      columns: 4
   - block: resume-awards
     content:
       title: Certifications
