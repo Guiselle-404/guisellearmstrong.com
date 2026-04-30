@@ -3,13 +3,12 @@
     "Guiselle Armstrong.pdf",
     "Profile-2.pdf",
     "resume-short.md",
-    "resume-long.md",
     "profile-2.md",
     "guiselle-dates.md"
   ],
   "certifications": [
     {
-      "name": "Six Sigma Black Belt – Level II",
+      "name": "Six Sigma Black Belt",
       "issuer": null,
       "date_obtained": null,
       "expiration_date": null,
@@ -17,7 +16,7 @@
       "source": "Guiselle Armstrong.pdf"
     },
     {
-      "name": "Six Sigma Green Belt – Level I",
+      "name": "Six Sigma Green Belt",
       "issuer": null,
       "date_obtained": null,
       "expiration_date": null,
@@ -25,32 +24,32 @@
       "source": "Guiselle Armstrong.pdf"
     },
     {
-      "name": "ITIL 4",
+      "name": "Six Sigma Yellow Belt",
       "issuer": null,
       "date_obtained": null,
       "expiration_date": null,
       "credential_id": null,
-      "source": "profile-2.md"
+      "source": "user-specified"
+    },
+    {
+      "name": "Certified in Cybersecurity (CC) – ISC²",
+      "issuer": "ISC²",
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "user-specified"
+    },
+    {
+      "name": "ITIL® Certified",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "user-specified"
     },
     {
       "name": "Cybersecurity Foundations: Governance, Risk, and Compliance (GRC)",
       "issuer": null,
-      "date_obtained": null,
-      "expiration_date": null,
-      "credential_id": null,
-      "source": "profile-2.md"
-    },
-    {
-      "name": "Six Sigma White Belt Certification",
-      "issuer": null,
-      "date_obtained": null,
-      "expiration_date": null,
-      "credential_id": null,
-      "source": "profile-2.md"
-    },
-    {
-      "name": "Six Sigma Black Belt (ICBB)",
-      "issuer": "ICBB",
       "date_obtained": null,
       "expiration_date": null,
       "credential_id": null,
@@ -64,19 +63,30 @@
       "credential_id": null,
       "source": "profile-2.md"
     },
+    {
+      "name": "Six Sigma White Belt",
+      "issuer": null,
+      "date_obtained": null,
+      "expiration_date": null,
+      "credential_id": null,
+      "source": "profile-2.md"
+    }
   ],
-  "total_certifications": 7,
+  "total_certifications": 8,
   "certification_categories": {
     "Six Sigma": [
-      "Six Sigma Black Belt – Level II",
-      "Six Sigma Green Belt – Level I",
-      "Six Sigma White Belt Certification",
-      "Six Sigma Black Belt (ICBB)"
+      "Six Sigma Black Belt",
+      "Six Sigma Green Belt",
+      "Six Sigma Yellow Belt",
+      "Six Sigma White Belt"
     ],
-    "IT/Compliance": [
-      "ITIL 4",
+    "Cybersecurity/Compliance": [
+      "Certified in Cybersecurity (CC) – ISC²",
       "Cybersecurity Foundations: Governance, Risk, and Compliance (GRC)",
       "Navigate SOC 2 Compliance in the Cloud"
+    ],
+    "IT Service Management": [
+      "ITIL® Certified"
     ]
   }
 }
