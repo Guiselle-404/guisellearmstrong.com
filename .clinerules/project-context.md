@@ -20,10 +20,10 @@
 - **Name:** Guiselle Armstrong
 - **Location:** Auburndale, FL
 - **Email:** g_a25@outlook.com
-- **LinkedIn:** www.linkedin.com/in/guisellearmstrong-12217760
 - **Phone:** (305) 915-5273
 - **Professional Title:** GRC & Process Improvement Professional | Six Sigma Black Belt | Compliance & Risk Management Specialist
 - **Languages:** English (Fluent), Spanish (Native/Bilingual)
+- **LinkedIn:** https://www.linkedin.com/in/guiselle-armstrong-12217760/
 
 ## Development Goals
 1. Create a polished, professional portfolio site
