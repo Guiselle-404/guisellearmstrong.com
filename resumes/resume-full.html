@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guiselle Armstrong - Resume</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.4;
+      color: #1a1a1a;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #1e3a5f;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .header h1 {
+      font-size: 22pt;
+      color: #1e3a5f;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+    .header .contact {
+      font-size: 9pt;
+      color: #4a4a4a;
+    }
+    .header .contact span {
+      margin: 0 6px;
+    }
+    .header .title {
+      font-size: 10pt;
+      color: #2c5f8a;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    section {
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #1e3a5f;
+      border-bottom: 1px solid #c0c0c0;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .summary {
+      font-size: 9.5pt;
+      color: #333;
+      text-align: justify;
+    }
+    .competencies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+    }
+    .competency-group {
+      margin-bottom: 4px;
+    }
+    .competency-group strong {
+      color: #2c5f8a;
+      font-size: 9.5pt;
+    }
+    .competency-group span {
+      font-size: 9pt;
+      color: #444;
+    }
+    .job {
+      margin-bottom: 10px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .job-header .company {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #1e3a5f;
+    }
+    .job-header .dates {
+      font-size: 9pt;
+      color: #666;
+      font-style: italic;
+    }
+    .job .position {
+      font-weight: 600;
+      font-size: 9.5pt;
+      color: #2c5f8a;
+      margin-bottom: 4px;
+    }
+    .job ul {
+      margin-left: 16px;
+      margin-top: 3px;
+    }
+    .job li {
+      font-size: 9pt;
+      margin-bottom: 2px;
+      color: #333;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 20px;
+    }
+    .cert-item {
+      font-size: 9pt;
+      padding-left: 8px;
+      border-left: 2px solid #2c5f8a;
+      color: #333;
+      margin-bottom: 3px;
+    }
+    .cert-item strong {
+      color: #1e3a5f;
+    }
+    .education-item {
+      margin-bottom: 6px;
+    }
+    .education-item .school {
+      font-weight: 700;
+      font-size: 9.5pt;
+      color: #1e3a5f;
+    }
+    .education-item .degree {
+      font-size: 9pt;
+      color: #333;
+    }
+    .education-item .dates {
+      font-size: 8.5pt;
+      color: #666;
+      font-style: italic;
+    }
+    .lang-skills {
+      display: flex;
+      gap: 20px;
+    }
+    .lang-item {
+      font-size: 9pt;
+    }
+    .lang-item strong {
+      color: #1e3a5f;
+    }
+    @media print {
+      body { padding: 0; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>GUISELLE ARMSTRONG</h1>
+    <div class="contact">
+      <span>Auburndale, FL</span> |
+      <span>(305) 915-5273</span> |
+      <span>g_a25@outlook.com</span> |
+      <span>linkedin.com/in/guisellearmstrong-12217760</span>
+    </div>
+    <div class="title">GRC & Process Improvement Professional | Six Sigma Black Belt | Compliance & Risk Management Specialist</div>
+  </div>
+
+  <section>
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      Governance, Risk, and Compliance (GRC) and Process Improvement professional with over 10 years of experience driving enterprise risk management, regulatory compliance, and operational excellence across complex IT environments. Expertise spans cybersecurity, compliance, and continuous improvement, translating technical risk into well-governed, scalable business processes aligned with SOX, SOC 2, PCI DSS, GDPR, CCPA, HIPAA, and NIST frameworks. Proven track record of achieving 95% remediation rates across 500+ systems, reducing manual compliance reporting by 50% through automation, maintaining 100% audit pass rates, and improving change success rates from 85% to 98%. Lean Six Sigma Black Belt with a structured, data-driven approach to risk reduction and process optimization.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies">
+      <div class="competency-group"><strong>GRC & Compliance:</strong> <span>SOX, SOC 2, PCI DSS, GDPR, CCPA, HIPAA, NIST, ITGC</span></div>
+      <div class="competency-group"><strong>Risk Management:</strong> <span>Vulnerability Lifecycle, Control Testing, Risk Assessment, Audit Readiness</span></div>
+      <div class="competency-group"><strong>Process Improvement:</strong> <span>Lean Six Sigma (DMAIC, SIPOC), Workflow Standardization, Stakeholder Engagement</span></div>
+      <div class="competency-group"><strong>Automation & Analytics:</strong> <span>ServiceNow, Power BI, Power Automate, Nessus, Qualys</span></div>
+      <div class="competency-group"><strong>Change Management:</strong> <span>Organizational Change, Stakeholder Engagement, Communication Planning</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Professional Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Universal Destinations & Experiences (UD&E)</span>
+        <span class="dates">June 2023 – October 2025</span>
+      </div>
+      <div class="position">Senior Information Security Engineer</div>
+      <ul>
+        <li>Managed vulnerability lifecycle for 500+ enterprise systems, achieving a 95% remediation rate within defined SLAs</li>
+        <li>Developed and delivered PCI DSS compliance training for all onboarding employees, ensuring 100% new hire compliance coverage</li>
+        <li>Conducted user access review training for 200+ employees, strengthening access governance and reducing unauthorized access risks</li>
+        <li>Designed and tested security controls supporting SOX, SOC 2, PCI DSS, GDPR, and CCPA compliance frameworks</li>
+        <li>Reduced manual compliance reporting effort by 50% through ServiceNow automation and Power BI dashboards</li>
+        <li>Partnered with internal audit teams on control walkthroughs and evidence collection, maintaining 100% audit pass rate</li>
+        <li>Documented 100+ control procedures and policies to support audit readiness and regulatory requirements</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">NBCUniversal</span>
+        <span class="dates">March 2023 – June 2023</span>
+      </div>
+      <div class="position">Senior Compliance and IT Governance Analyst</div>
+      <ul>
+        <li>Executed compliance assessments and IT governance evaluations across enterprise systems</li>
+        <li>Supported GRC program initiatives and control testing activities</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Publix Super Markets</span>
+        <span class="dates">June 2021 – March 2023</span>
+      </div>
+      <div class="position">Change Manager / Change Management Analyst</div>
+      <ul>
+        <li>Led enterprise change initiatives with embedded GRC controls, reducing compliance-related incidents by 30%</li>
+        <li>Improved change success rates from 85% to 98% through standardized workflows and stakeholder communication</li>
+        <li>Conducted risk assessments for 200+ change requests annually, ensuring alignment with ITGC and SOX requirements</li>
+        <li>Led user access review training programs, improving access control compliance and reducing audit findings</li>
+        <li>Eliminated audit findings by documenting and institutionalizing change control procedures adopted as the enterprise ITGC baseline</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Bristol Myers Squibb</span>
+        <span class="dates">June 2020 – August 2021</span>
+      </div>
+      <div class="position">Help Desk Analyst</div>
+      <ul>
+        <li>Provided tier-1 and tier-2 technical support for enterprise IT systems and applications</li>
+        <li>Assisted with access governance and identity management for end-user systems</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Digital Aspire / Newgentek</span>
+        <span class="dates">February 2019 – March 2020</span>
+      </div>
+      <div class="position">Technical Support Manager</div>
+      <ul>
+        <li>Managed PCI DSS compliance for multi-site retail clients, ensuring 100% audit readiness</li>
+        <li>Reduced service escalations by 25% through process optimization and control implementation</li>
+        <li>Trained users on access governance and ITGC-aligned procedures, increasing adoption during system transitions</li>
+        <li>Implemented monitoring controls for secure operations across distributed environments</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Badcock Home Furniture & More</span>
+        <span class="dates">February 2015 – February 2019</span>
+      </div>
+      <div class="position">Network Engineer</div>
+      <ul>
+        <li>Managed vulnerability remediation and patch management for 200+ systems, achieving a 90% compliance rate</li>
+        <li>Led network-related process improvements for change control, incident response, and access management</li>
+        <li>Partnered with security teams to align network operations with ITGC and compliance requirements</li>
+        <li>Documented 50+ network standards and procedures supporting audit readiness and operational consistency</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Verizon</span>
+        <span class="dates">June 2013 – December 2015</span>
+      </div>
+      <div class="position">Help Desk Technician</div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="school">Southern New Hampshire University</div>
+      <div class="degree">Bachelor of Business Administration (BBA), Business Administration and Management</div>
+      <div class="dates">Expected October 2026</div>
+    </div>
+    <div class="education-item">
+      <div class="school">ITT Technical Institute – Tampa</div>
+      <div class="degree">Associate of Science (A.S.), Computer Systems Networking and Telecommunications</div>
+      <div class="dates">2010 – 2012</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Certifications</div>
+    <div class="cert-grid">
+      <div class="cert-item"><strong>Six Sigma Black Belt</strong> (ICBB)</div>
+      <div class="cert-item"><strong>Certified in Cybersecurity (CC)</strong> – ISC²</div>
+      <div class="cert-item"><strong>Six Sigma Green Belt</strong></div>
+      <div class="cert-item"><strong>ITIL® Certified</strong></div>
+      <div class="cert-item"><strong>GRC Foundations</strong> – Cybersecurity Governance, Risk & Compliance</div>
+      <div class="cert-item"><strong>SOC 2 Compliance</strong> in the Cloud</div>
+      <div class="cert-item"><strong>Six Sigma Yellow Belt</strong></div>
+      <div class="cert-item"><strong>Six Sigma White Belt</strong></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Languages</div>
+    <div class="lang-skills">
+      <div class="lang-item"><strong>English:</strong> Fluent</div>
+      <div class="lang-item"><strong>Spanish:</strong> Native / Bilingual</div>
+    </div>
+  </section>
+
+</body>
+</html>
