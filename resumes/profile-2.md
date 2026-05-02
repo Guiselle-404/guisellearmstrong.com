@@ -7,7 +7,6 @@
 ## Contact Information
 
 - **Phone:** 3059155273 (Mobile)
-- **LinkedIn:** [www.linkedin.com/in/guisellearmstrong-12217760](www.linkedin.com/in/guisellearmstrong-12217760)
 - **Location:** Auburndale, Florida, United States
 
 ---

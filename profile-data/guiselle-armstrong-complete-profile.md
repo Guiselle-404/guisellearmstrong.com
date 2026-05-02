@@ -70,8 +70,8 @@
   },
   "email": "g_a25@outlook.com",
   "linkedin": {
-    "url": "linkedin.com/in/guisellearmstrong-12217760",
-    "formatted_url": "www.linkedin.com/in/guisellearmstrong-12217760"
+    "url": "https://www.linkedin.com/in/guiselle-armstrong-12217760/",
+    "formatted_url": "https://www.linkedin.com/in/guiselle-armstrong-12217760/"
   },
   "location": {
     "city": "Auburndale",
@@ -90,7 +90,7 @@
 | **Name** | Guiselle Armstrong |
 | **Phone (Mobile)** | (305) 915-5273 |
 | **Email** | g_a25@outlook.com |
-| **LinkedIn** | www.linkedin.com/in/guisellearmstrong-12217760 |
+| **LinkedIn** | https://www.linkedin.com/in/guiselle-armstrong-12217760/ |
 | **Location** | Auburndale, Florida, United States |
 
 ### Professional Title
@@ -572,7 +572,7 @@ Feb 2015 – Feb 2019
 
 ```
 Guiselle Armstrong
-Auburndale, FL | (305) 915-5273 |g_a25@outlook.com | LinkedIn: linkedin.com/in/guisellearmstrong-12217760
+Auburndale, FL | (305) 915-5273 |g_a25@outlook.com | LinkedIn: https://www.linkedin.com/in/guiselle-armstrong-12217760/
 
 Professional Summary
 GRC and Process Improvement professional with 10+ years of experience implementing
@@ -712,7 +712,7 @@ Contact
 
 Guiselle Armstrong
 
-www.linkedin.com/in/guisellearmstrong-12217760 (LinkedIn)
+https://www.linkedin.com/in/guiselle-armstrong-12217760/ (LinkedIn)
 
 GRC & Process Improvement Professional | Six Sigma Black Belt |
 Compliance & Risk Management Specialist

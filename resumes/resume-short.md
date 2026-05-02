@@ -2,8 +2,7 @@ Guiselle Armstrong
 Auburndale, FL
 (305) 915-5273
 g_a25@outlook.com
-LinkedIn: linkedin.com/in/guiselle-armstrong-12217760
-PROFESSIONAL SUMMARY
+LinkedIn: https://www
 Senior GRC Engineer and Change Management leader with 10+ years of experience driving enterprise compliance and
 transformational
 CORE COMPETENCIES
